@@ -1,0 +1,59 @@
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 22px;
+}
+.main-userinfo .info .info-right .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.profile-links .profile-link,
+.main-userinfo .info .info-right .icon .profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #494e52;
+}
+.profile-links .profile-link:hover,
+.main-userinfo .info .info-right .icon .profile-link:hover {
+  color: #494e52;
+  text-decoration: underline;
+}
+.profile-links .profile-link img,
+.main-userinfo .info .info-right .icon img {
+  display: block;
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px !important;
+  margin: 0;
+  object-fit: contain;
+}
+.profile-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+@media (max-width: 768px) {
+  .profile-links { gap: 0.08rem 0.18rem; }
+  .main-userinfo .info .info-right .icon {
+    gap: 0.06rem;
+    margin-top: 0.12rem;
+  }
+  .profile-links .profile-link,
+  .main-userinfo .info .info-right .icon .profile-link {
+    gap: 0.07rem;
+    font-size: 0.12rem;
+    line-height: 0.2rem;
+  }
+  .profile-links .profile-link img,
+  .main-userinfo .info .info-right .icon img {
+    width: 0.15rem;
+    height: 0.15rem !important;
+  }
+}
